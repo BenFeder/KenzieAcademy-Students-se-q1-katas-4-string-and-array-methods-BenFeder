@@ -369,8 +369,16 @@ kata27();
 
 // Write a function that returns the index of 'Mirkwood' in 'lotrCitiesArray'.
 function kata28() {
-  // Your Code Here
+  createHeader(28);
+  let index28 = lotrCitiesArray.indexOf("Mirkwood");
+  let index28display = document.createElement("div");
+  index28display.innerText = index28;
+  document.body.appendChild(index28display);
+  return index28;
 }
+
+kata28();
+
 // Write a function that finds and returns the first city in 'lotrCitiesArray' that has more than one word.
 function kata29() {
   // Your Code Here
