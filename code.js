@@ -342,8 +342,20 @@ function kata26() {
 }
 // Write a function that returns 'Yes' or 'No' if 'lotrCitiesArray' includes 'Hollywood'.
 function kata27() {
-  // Your Code Here
+  createHeader(27);
+  let hollywoodItem = lotrCitiesArray.includes("Hollywood");
+  let hollywoodDisplay = document.createElement("div");
+  if (hollywoodItem == true) {
+    hollywoodDisplay.innerText = "Yes";
+  } else {
+    hollywoodDisplay.innerText = "No";
+  }
+  document.body.appendChild(hollywoodDisplay);
+  return hollywoodItem;
 }
+
+kata27();
+
 // Write a function that returns the index of 'Mirkwood' in 'lotrCitiesArray'.
 function kata28() {
   // Your Code Here
