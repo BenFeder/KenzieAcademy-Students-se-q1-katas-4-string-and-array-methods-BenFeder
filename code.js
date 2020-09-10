@@ -310,8 +310,20 @@ kata21();
 
 // Write a function that finds and returns the index of the last word in 'bestThing'.
 function kata22() {
-  // Your Code Here
+  createHeader(22);
+  let array22 = bestThing.split(" ");
+  let array22Length = array22.length;
+  let lastIndex = array22[array22Length - 1];
+  let index22 = bestThing.indexOf(`${lastIndex}`);
+
+  let index22display = document.createElement("div");
+  index22display.innerText = index22;
+  document.body.appendChild(index22display);
+  return index22;
 }
+
+kata22();
+
 // Write a function that finds and returns an array of all cities from 'gotCitiesCSV' that use double vowels ('aa', 'ee', etc.).
 function kata23() {
   // Your Code Here
