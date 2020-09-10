@@ -389,8 +389,15 @@ function kata30() {
 }
 // Write a function that sorts 'lotrCitiesArray' alphabetically and returns the new array.
 function kata31() {
-  // Your Code Here
+  createHeader(31);
+  let array31 = lotrCitiesArray.sort();
+  let array31display = document.createElement("div");
+  array31display.innerText = JSON.stringify(array31);
+  document.body.appendChild(array31display);
+  return array31;
 }
+
+kata31();
 // Write a function that sorts 'lotrCitiesArray' by the number of characters in each city (i.e., shortest city names go first) and return the new array.
 function kata32() {
   // Your Code Here
