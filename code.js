@@ -338,8 +338,19 @@ function kata25() {
 }
 // Write a function that returns 'Yes' or 'No' if 'lotrCitiesArray' includes 'Mirkwood'.
 function kata26() {
-  // Your Code Here
+  createHeader(26);
+  let MirkwoodItem = lotrCitiesArray.includes("Mirkwood");
+  let MirkwoodDisplay = document.createElement("div");
+  if (MirkwoodItem == true) {
+    MirkwoodDisplay.innerText = "Yes";
+  } else {
+    MirkwoodDisplay.innerText = "No";
+  }
+  document.body.appendChild(MirkwoodDisplay);
+  return MirkwoodItem;
 }
+
+kata26();
 // Write a function that returns 'Yes' or 'No' if 'lotrCitiesArray' includes 'Hollywood'.
 function kata27() {
   createHeader(27);
