@@ -298,8 +298,16 @@ kata20();
 
 // Write a function that finds and returns the index of 'only' in 'bestThing'.
 function kata21() {
-  // Your Code Here
+  createHeader(21);
+  let index21 = bestThing.indexOf("only");
+  let index21display = document.createElement("div");
+  index21display.innerText = index21;
+  document.body.appendChild(index21display);
+  return index21;
 }
+
+kata21();
+
 // Write a function that finds and returns the index of the last word in 'bestThing'.
 function kata22() {
   // Your Code Here
